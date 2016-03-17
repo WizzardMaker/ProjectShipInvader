@@ -1,0 +1,131 @@
+Initialize engine version: 5.3.2f1 (e87ab445ead0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     1993 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.092 seconds
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Jonas\Documents\GitHub\ProjectSpaceX\test_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 4880x1080 at -1680,0
+<RI> Initialized touch support.
+UnloadTime: 0.800958 ms
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Argument cannot be null.
+Parameter name: s
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+SaveSettings called blank: True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.025361 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 579.
+Total: 0.604068 ms (FindLiveObjects: 0.042232 ms CreateObjectMapping: 0.016601 ms MarkObjects: 0.535914 ms  DeleteObjects: 0.008737 ms)
+
+624 x 464 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+640 x 350 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+640 x 480 @ 60Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+720 x 480 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+720 x 576 @ 50Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+800 x 600 @ 60Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1024 x 768 @ 60Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1152 x 864 @ 75Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1176 x 664 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1280 x 720 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1280 x 768 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1280 x 800 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1280 x 960 @ 60Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1280 x 1024 @ 60Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1360 x 768 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1366 x 768 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1440 x 900 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1600 x 900 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1600 x 1024 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1680 x 1050 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1920 x 1080 @ 59Hz
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1bf8 -> priority: 1 
