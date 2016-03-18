@@ -10,10 +10,17 @@ public class CameraController : MonoBehaviour {
 	public float maxAngle, minAngle;
 	public float testFloat;
 
+	VariableReference MouseSensX, InvertY, MouseSensY, InvertX, FOV;
+
 	// Use this for initialization
 	void Start () {
 		cam = Camera.main;
-	}
+		MouseSensX = GlobalModifierList.GetRef("MouseSensX");
+		InvertX = GlobalModifierList.GetRef("InvertX");
+		MouseSensY = GlobalModifierList.GetRef("MouseSensY");
+		InvertY = GlobalModifierList.GetRef("InvertY");
+		FOV = GlobalModifierList.GetRef("FOV");
+    }
 
 	static Vector3 ClampY(Vector3 angle, float max, float min) {
 		return new Vector3(angle.x, angle.y > max ? max : angle.y < min ? min : angle.y, angle.z);
@@ -28,12 +35,12 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.Rotate(Vector3.up * Input.GetAxisRaw("Mouse X") * (float)GlobalModifierList.Get("MouseSensX") * ((bool)GlobalModifierList.Get("InvertX") ? -1 : 1));
+		transform.Rotate(Vector3.up * Input.GetAxisRaw("Mouse X") * (float)MouseSensX.Get() * ((bool)InvertX.Get() ? -1 : 1));
 
-		cam.transform.Rotate(Vector3.right * Input.GetAxisRaw("Mouse Y") * (float)GlobalModifierList.Get("MouseSensY") * ((bool)GlobalModifierList.Get("InvertY") ? 1 : -1));
+		cam.transform.Rotate(Vector3.right * Input.GetAxisRaw("Mouse Y") * (float)MouseSensY.Get() * ((bool)InvertY.Get() ? 1 : -1));
 
 		cam.transform.localRotation = Quaternion.Euler(ClampX(cam.transform.localRotation.eulerAngles, maxAngle, -minAngle));
 
-		cam.fieldOfView = (float)GlobalModifierList.Get("FOV");
+		cam.fieldOfView = (float)FOV.Get();
 	}
 }

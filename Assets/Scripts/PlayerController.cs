@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	void FixedUpdate() {
 		isOnWall = Physics.CheckCapsule(transform.position + transform.up / 3, transform.position - transform.up / 3, 0.6f, 1 << 8);
-		isGrounded = Physics.Raycast(transform.position,-Vector3.up,cc.bounds.extents.y+0.1f);
+		Debug.DrawRay(transform.position, -transform.up * (cc.bounds.extents.y + 0.1f));
+		isGrounded = Physics.Raycast(transform.position,-transform.up,cc.bounds.extents.y+0.1f);
 	}
 }
