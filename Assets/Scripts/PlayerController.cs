@@ -9,7 +9,10 @@ public class PlayerController : MonoBehaviour {
 	public Vector3 velocity = Vector3.zero, gravity = Vector3.zero;
 	CollisionFlags oFlag;
 	float testFloat;
+	bool isOnWall, isWallJumping, isGrounded;
+	public bool doWallJumps;
 
+	public GameObject test;
 
 	// Use this for initialization
 	void Start () {
@@ -19,32 +22,60 @@ public class PlayerController : MonoBehaviour {
 	void Move() {
 		velocity = Vector3.zero;
 
-		if (cc.isGrounded) {
-			gravity = Physics.gravity * Time.deltaTime;
+
+		CollisionFlags flag = cc.collisionFlags;
+
+		if (isGrounded && !isOnWall && !isWallJumping) {
+			gravity = Vector3.zero;
 			velocity += transform.forward * Input.GetAxisRaw("Vertical") * speed;
 			velocity += transform.right * Input.GetAxisRaw("Horizontal") * speed;
 
-			if (Input.GetButtonDown("Jump")) {
-				gravity = transform.up * jumpHeight;
-			}
-		} else {
 
+		} else {
+			gravity += Physics.gravity * Time.deltaTime;
 			velocity += transform.forward * Input.GetAxisRaw("Vertical") * airSpeed;
 			velocity += transform.right * Input.GetAxisRaw("Horizontal") * airSpeed;
 		}
-		gravity += Physics.gravity * Time.deltaTime;
-		//velocity.Normalize();
-		velocity += gravity;
-		CollisionFlags flag = cc.Move(velocity * Time.deltaTime);
+		if ((isGrounded || !isOnWall) && isWallJumping) {
+			isWallJumping = false;
+		}
 
 		if ((flag & CollisionFlags.Above) != 0 && !((oFlag & CollisionFlags.Above) != 0)) {
 			gravity = -gravity / 2;
 		}
+
+		if (Input.GetButtonDown("Jump") && (isGrounded || isOnWall) && !isWallJumping) {
+			gravity = transform.up * jumpHeight;
+			isGrounded = false;
+			if (isOnWall) {
+				isWallJumping = true;
+				Debug.Log("Wall Jump");
+			}
+		}
+
+		
+
+		
+		//velocity.Normalize();
+
+
+		if (Input.GetButton("Sprint") && isOnWall && !isWallJumping) {
+			gravity = Vector3.zero;
+		}
+
+		velocity += gravity;
+
+		cc.Move(velocity * Time.deltaTime);
+
 		oFlag = flag;
 	}
 
 	// Update is called once per frame
 	void Update() {
 		Move();
+	}
+	void FixedUpdate() {
+		isOnWall = Physics.CheckCapsule(transform.position + transform.up / 3, transform.position - transform.up / 3, 0.6f, 1 << 8);
+		isGrounded = Physics.Raycast(transform.position,-Vector3.up,cc.bounds.extents.y+0.1f);
 	}
 }
