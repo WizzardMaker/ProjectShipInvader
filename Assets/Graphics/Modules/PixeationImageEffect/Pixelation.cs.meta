@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b5d2918a4c98b934f96a71d311972ade
+timeCreated: 1454431375
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - PixelationShader: {fileID: 4800000, guid: 5c950d48db4c41c4f8a70fd6f63bc9f8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour {
 			isWallJumping = false;
 		}
 
-		if ((flag & CollisionFlags.Above) != 0 && !((oFlag & CollisionFlags.Above) != 0)) {
+		if ((flag & CollisionFlags.Above) != 0 && !((oFlag & CollisionFlags.Above) != 0) && gravity.y > 0 ) {
 			gravity = -gravity / 2;
 		}
 
