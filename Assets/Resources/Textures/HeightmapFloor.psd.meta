@@ -3,17 +3,18 @@ guid: 06a128eabbc4ea846be8c0fe0113fcac
 timeCreated: 1457464903
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    8900000: generatedCubemap
   serializedVersion: 2
   mipmaps:
-    mipMapMode: 0
+    mipMapMode: 1
     enableMipMap: 1
     linearTexture: 1
-    correctGamma: 0
-    fadeOut: 0
-    borderMipMap: 0
-    mipMapFadeDistanceStart: 1
-    mipMapFadeDistanceEnd: 3
+    correctGamma: 1
+    fadeOut: 1
+    borderMipMap: 1
+    mipMapFadeDistanceStart: 4
+    mipMapFadeDistanceEnd: 6
   bumpmap:
     convertToNormalMap: 1
     externalNormalMap: 1
@@ -29,10 +30,10 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 2
     aniso: 0
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 0
   nPOTScale: 1
   lightmap: 0
   rGBM: 0
