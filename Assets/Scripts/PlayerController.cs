@@ -4,6 +4,8 @@ using Utils.Modifier;
 
 public class PlayerController : MonoBehaviour {
 
+	public static PlayerController active;
+
 	public float speed,airSpeed, jumpHeight;
 	CharacterController cc;
 	public Vector3 velocity = Vector3.zero, gravity = Vector3.zero;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		active = this;
 		cc = GetComponent<CharacterController>();
 	}
 

@@ -3,14 +3,25 @@ using System.Collections;
 
 [ExecuteInEditMode]
 public class Pixelation : MonoBehaviour {
-	// Use this for initialization
-	void Start() {
 
+	public static Pixelation active;
+
+	// Use this for initialization
+	void Awake() {
+		if(active != null) {
+			this.enabled = false;
+			return;
+		}
+
+		active = this;
 	}
 
 	// Update is called once per frame
 	void Update() {
-
+		if (active != this) {
+			this.enabled = false;
+			return;
+		}
 	}
 
 	public Shader PixelationShader;

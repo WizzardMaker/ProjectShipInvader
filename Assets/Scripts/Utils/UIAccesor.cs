@@ -85,9 +85,11 @@ namespace Utils.UI {
 					return;
 				}
 				if(drop != null) {
-					drop.value = (int)GlobalModifierList.Get(variableName);
-					if(changeMenu)
+					if (changeMenu)
 						AddDropDownMenus();
+					else
+					drop.value = (int)GlobalModifierList.Get(variableName);
+					
                 }
 			}
 			if (getValue) {
